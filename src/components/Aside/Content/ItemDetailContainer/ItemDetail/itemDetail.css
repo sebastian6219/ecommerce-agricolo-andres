@@ -1,0 +1,108 @@
+/* Contenedor principal centrado y con borde */
+.detalle-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #F7F7FF;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 1500px;
+    border: 1px solid #495867;
+
+}
+
+/* Imagen del producto */
+.detalle-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod-img {
+    max-width: 80%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+
+    /* border: 1px solid #495867; */
+    object-fit: contain;
+}
+
+
+
+/* Información del producto */
+
+.detalle-info-contain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.detalle-info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+
+
+.prod-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.prod-category {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.prod-price {
+    font-size: 1.5rem;
+    color: #577399;
+    font-weight: bold;
+}
+
+/* Secciones de colores y talles */
+.prod-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.color-section,
+.waist-section {
+    display: flex;
+
+}
+
+.color-section h3,
+.waist-section h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.color-list,
+.waist-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.color-item,
+.waist-item {
+    justify-items: end;
+    background-color: #495867;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}

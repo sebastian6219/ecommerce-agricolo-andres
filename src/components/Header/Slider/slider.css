@@ -1,0 +1,45 @@
+/* El contenedor del slider estará centrado y en la parte superior de la página */
+
+.slider-container {
+    position: absolute;
+    /* Para posicionarlo en un lugar específico de la página */
+    top: 0;
+    /* Cerca de la parte superior de la página */
+    left: 50%;
+    /* Mueve el contenedor horizontalmente al centro */
+    transform: translateX(-50%);
+    /* Ajusta para centrar el contenedor completamente */
+    width: 100%;
+    max-width: 600px;
+    height: 2rem;
+    overflow: hidden;
+    background-color: #010101
+}
+
+.slider-container.background {
+    max-width: 100%;
+
+}
+
+.slider {
+    display: flex;
+    transition: none;
+    /* Sin transición por defecto */
+}
+
+.transition {
+    transition: transform 0.5s ease-in-out;
+    /* Solo transiciona cuando esté cambiando slides */
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.slide span {
+    font-size: 1rem;
+
+    color: #ffffff;
+}

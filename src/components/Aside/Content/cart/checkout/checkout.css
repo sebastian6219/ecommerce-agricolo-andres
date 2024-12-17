@@ -1,0 +1,135 @@
+/* Contenedor del formulario de checkout */
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f7f7ff;
+    /* Fondo rosa claro */
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título del formulario */
+.checkout-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2698f2;
+    /* Color del título */
+}
+
+/* Estilo del formulario */
+.checkout-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Estilo de las etiquetas */
+.checkout-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo de los campos de entrada */
+.checkout-form input {
+    padding: 0.8rem;
+    border: 1px solid #2698f2;
+    /* Borde azul */
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.checkout-form input:focus {
+    border-color: #1e80c3;
+    /* Azul ligeramente más oscuro en focus */
+    outline: none;
+}
+
+/* Estilo del botón de envío */
+.checkout-form button {
+    background-color: #2698f2;
+    /* Azul */
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.checkout-form button:hover {
+    background-color: #1e80c3;
+    /* Azul ligeramente más oscuro en hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-form button:active {
+    background-color: #0056b3;
+    /* Azul aún más oscuro en click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Estilo del mensaje de agradecimiento */
+.thank-you-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd7d58c;
+    /* Fondo rosa claro */
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message h3 {
+    font-size: 2rem;
+    color: #2698f2;
+    /* Azul para el texto */
+    margin-bottom: 1rem;
+}
+
+.thank-you-message p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.thank-you-message button {
+    background-color: #2698f2;
+    /* Azul */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.thank-you-message button:hover {
+    background-color: #1e80c3;
+    /* Azul ligeramente más oscuro en hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-message button:active {
+    background-color: #0056b3;
+    /* Azul aún más oscuro en click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

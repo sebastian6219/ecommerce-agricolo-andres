@@ -1,0 +1,260 @@
+/* Estilo del contenedor del carrito */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #F7F7FF;
+    /* Fondo rosa claro */
+    gap: 2rem;
+    /* Espacio entre los elementos */
+}
+
+/* Estilo de los elementos del carrito */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+}
+
+/* Estilo del botón de vaciar carrito */
+.btn-empty-cart {
+    background-color: #E91E63;
+    /* Rosa intenso */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 1rem;
+}
+
+.btn-empty-cart:hover {
+    background-color: #c2185b;
+    /* Rosa más oscuro */
+}
+
+/* Estilo del botón de terminar compra */
+.btn-checkout {
+    background-color: #2698f2;
+    /* Color azul especificado */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-checkout:hover {
+    background-color: #1e80c3;
+    /* Azul ligeramente más oscuro */
+}
+
+/* Estilo del mensaje cuando el carrito está vacío */
+.empty-cart-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.empty-cart-message img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    opacity: 60%;
+}
+
+.empty-cart-message h2,
+.empty-cart-message h3 {
+    margin: 0;
+}
+
+.empty-cart-message .btn-blue {
+    width: 300px;
+    height: 40px;
+    color: #ffdde1;
+    background-color: #495867;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.empty-cart-message .btn-blue:hover {
+    background-color: #642ca9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.empty-cart-message .btn-blue:active {
+    background-color: #004494;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor del precio total y botones */
+.price-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 1rem 0;
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    height: 200px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.buttons {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Estilo del botón de vaciar carrito */
+.btn-clear-cart {
+    border: 1px solid #2698f2;
+    /* Borde azul */
+    border-radius: 5px;
+    color: #2698f2;
+    /* Texto azul */
+    padding: 8px 8px;
+    margin: 0 4px;
+    /* Espaciado entre botones */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-clear-cart:hover {
+    background-color: #1e80c3;
+    /* Azul ligeramente más oscuro */
+    color: white;
+    /* Texto blanco en hover */
+}
+
+.btn-clear-cart svg {
+    margin-right: 5px;
+    /* Espaciado entre el icono y el texto */
+    top: 0;
+}
+
+/* Estilo del botón de terminar compra */
+.btn-checkout {
+    border: 1px solid #2698f2;
+    /* Borde azul */
+    background-color: white;
+    border-radius: 5px;
+    color: #2698f2;
+    /* Texto azul */
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 4px;
+    /* Espaciado entre botones */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-checkout:hover {
+    background-color: #1e80c3;
+    /* Azul ligeramente más oscuro */
+    color: white;
+    /* Texto blanco en hover */
+}
+
+/* Estilo del texto del precio total */
+.price-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/* Contenedor principal cuando el carrito está vacío */
+.div-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin: 3rem 2rem;
+
+    background-color: #bdd5ea65;
+    /* Fondo rosa claro */
+}
+
+.date-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFF;
+    /* Fondo blanco para el contenido */
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date-contain img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.date-contain h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.date-contain h3 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.date-contain .btn-blue {
+    background-color: #2698f2;
+    /* Azul */
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.date-contain .btn-blue:hover {
+    background-color: #1e80c3;
+    /* Azul ligeramente más oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date-contain .btn-blue:active {
+    background-color: #0056b3;
+    /* Azul aún más oscuro en click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

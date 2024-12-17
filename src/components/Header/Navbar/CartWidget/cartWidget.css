@@ -1,0 +1,27 @@
+span {
+
+    font-size: 0.8rem;
+    position: relative;
+    top: -10px;
+    font-style: none;
+    text-decoration: unset;
+    color: #f6a830;
+
+}
+
+svg {
+
+
+    position: relative;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+
+}
+
+svg path {
+
+    color: #f6a830;
+    transition: color 0.3s, transform 0.3s;
+
+}

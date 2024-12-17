@@ -1,0 +1,23 @@
+/* Contenedor principal de los productos */
+.itemContainer {
+    display: grid;
+    max-width: 1450px;
+    margin: 0 auto;
+    gap: 0rem;
+    /* Añadí más espacio entre las tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(385px, 0fr));
+    /* Ajusta el ancho de las tarjetas */
+    padding: 50px 5px 50px 5px;
+    background-color: #f3a531c5;
+    /* Fondo rosa claro */
+    place-items: center;
+    justify-content: center;
+}
+
+/* Estilo del popup */
+.custom-popup {
+    max-width: 90vw !important;
+    width: auto !important;
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+}
