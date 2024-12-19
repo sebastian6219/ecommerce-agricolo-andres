@@ -5,10 +5,9 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    background-color: #F7F7FF;
-    /* Fondo rosa claro */
+    background-color: #f5f5f5;
+    /* Gris claro */
     gap: 2rem;
-    /* Espacio entre los elementos */
 }
 
 /* Estilo de los elementos del carrito */
@@ -22,8 +21,8 @@
 
 /* Estilo del botón de vaciar carrito */
 .btn-empty-cart {
-    background-color: #E91E63;
-    /* Rosa intenso */
+    background-color: #ff6f00;
+    /* Naranja deportivo */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -35,14 +34,14 @@
 }
 
 .btn-empty-cart:hover {
-    background-color: #c2185b;
-    /* Rosa más oscuro */
+    background-color: #e64a19;
+    /* Naranja más oscuro */
 }
 
 /* Estilo del botón de terminar compra */
 .btn-checkout {
-    background-color: #2698f2;
-    /* Color azul especificado */
+    background-color: #76c7c0;
+    /* Verde claro */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -52,8 +51,8 @@
 }
 
 .btn-checkout:hover {
-    background-color: #1e80c3;
-    /* Azul ligeramente más oscuro */
+    background-color: #1f8a70;
+    /* Verde más oscuro */
 }
 
 /* Estilo del mensaje cuando el carrito está vacío */
@@ -111,29 +110,24 @@
     justify-content: end;
     margin: 1rem 0;
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     height: 200px;
     padding: 1rem;
     box-sizing: border-box;
 }
 
 .buttons {
-
     display: flex;
     flex-direction: row;
-
 }
 
 /* Estilo del botón de vaciar carrito */
 .btn-clear-cart {
-    border: 1px solid #2698f2;
-    /* Borde azul */
+    border: 1px solid #76c7c0;
+    /* Verde claro */
     border-radius: 5px;
-    color: #2698f2;
-    /* Texto azul */
+    color: #76c7c0;
     padding: 8px 8px;
     margin: 0 4px;
-    /* Espaciado entre botones */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     display: flex;
@@ -143,30 +137,26 @@
 }
 
 .btn-clear-cart:hover {
-    background-color: #1e80c3;
-    /* Azul ligeramente más oscuro */
+    background-color: #1f8a70;
+    /* Verde oscuro */
     color: white;
-    /* Texto blanco en hover */
 }
 
 .btn-clear-cart svg {
     margin-right: 5px;
-    /* Espaciado entre el icono y el texto */
     top: 0;
 }
 
 /* Estilo del botón de terminar compra */
 .btn-checkout {
-    border: 1px solid #2698f2;
-    /* Borde azul */
+    border: 1px solid #76c7c0;
+    /* Verde claro */
     background-color: white;
     border-radius: 5px;
-    color: #2698f2;
-    /* Texto azul */
+    color: #76c7c0;
     text-decoration: none;
     padding: 8px 16px;
     margin: 0 4px;
-    /* Espaciado entre botones */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     display: flex;
@@ -175,10 +165,9 @@
 }
 
 .btn-checkout:hover {
-    background-color: #1e80c3;
-    /* Azul ligeramente más oscuro */
+    background-color: #1f8a70;
+    /* Verde oscuro */
     color: white;
-    /* Texto blanco en hover */
 }
 
 /* Estilo del texto del precio total */
@@ -186,8 +175,9 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #212121;
+    /* Negro */
 }
-
 
 /* Contenedor principal cuando el carrito está vacío */
 .div-container {
@@ -197,9 +187,8 @@
     justify-content: center;
     height: 500px;
     margin: 3rem 2rem;
-
     background-color: #bdd5ea65;
-    /* Fondo rosa claro */
+    /* Azul suave */
 }
 
 .date-contain {
@@ -209,7 +198,6 @@
     justify-content: center;
     text-align: center;
     background-color: #FFF;
-    /* Fondo blanco para el contenido */
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -235,8 +223,8 @@
 }
 
 .date-contain .btn-blue {
-    background-color: #2698f2;
-    /* Azul */
+    background-color: #76c7c0;
+    /* Verde claro */
     color: #FFF;
     padding: 10px 20px;
     border: none;
@@ -248,13 +236,85 @@
 }
 
 .date-contain .btn-blue:hover {
-    background-color: #1e80c3;
-    /* Azul ligeramente más oscuro */
+    background-color: #1f8a70;
+    /* Verde oscuro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .date-contain .btn-blue:active {
     background-color: #0056b3;
-    /* Azul aún más oscuro en click */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del ítem del carrito */
+.item-de-carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-width: 100vw;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem 4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Estilo del contenedor de detalles del ítem del carrito */
+.cartItem-Detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.datos-del-producto {
+    width: 60%;
+}
+
+.datos-del-producto p {
+    font-weight: 500;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Estilo de la imagen del producto */
+.imagen-del-carrito {
+    width: 100%;
+    margin-left: 50px;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los botones de cantidad */
+.cartItem-Detail button {
+    border: 1px solid #76c7c0;
+    /* Verde claro */
+    border-radius: 5px;
+    color: #76c7c0;
+    padding: 8px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cartItem-Detail button:hover {
+    background-color: #1f8a70;
+    /* Verde oscuro */
+    color: white;
+}
+
+/* Estilo de los detalles de precio y cantidad */
+.cartItem-Detail div {
+    margin-bottom: 1rem;
 }

@@ -1,69 +1,87 @@
 /* Tarjeta del producto */
 .prod-card {
-    width: 350px;
-    height: 500px;
-    border: 2px solid #BDD5EA;
-    /* Borde rosa suave */
-    border-top: 0;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
+    width: 300px;
+    height: 400px;
+    border: 3px solid #76c7c0;
+    /* Verde claro */
+    background-color: #ffffff;
+    /* Blanco limpio */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Sombra más marcada */
     transition: transform 0.3s ease, background-color 0.3s ease;
     text-align: center;
     padding: 1rem;
-
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: baseline;
-
-
+    align-items: center;
+    border-radius: 10px;
+    /* Bordes redondeados */
 }
 
 /* Imagen del producto */
 .foto-del-producto {
     width: 100%;
-    height: 400px;
+    height: 250px;
+    /* Ajustado para mantener proporción */
     object-fit: contain;
-    border-radius: 8px 8px 0 0;
-
+    border-radius: 8px;
 }
 
 /* Nombre del producto */
 .nombre-de-producto {
-    font-size: 1rem;
-
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #76c7c0;
+    /* Verde claro */
     margin: 0.5rem 0;
+    text-transform: uppercase;
+    /* Mayúsculas para destacar */
 }
 
 /* Precio del producto */
 .prod-card p {
-    font-size: 1rem;
-    font-weight: 100;
-    color: #555;
-    /* Color rosa intenso */
-
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FF2044;
+    /* Negro para mayor contraste */
 }
-
-/* Categoría del producto */
 
 /* Efecto hover en la tarjeta */
 .prod-card-container:hover .prod-card {
-    background-color: rgb(143, 152, 161);
-
+    background-color: #76c7c0;
+    /* Fondo verde claro */
+    transform: scale(1.05);
+    /* Efecto de zoom */
 }
 
 .prod-card-container:hover .prod-card p,
 .prod-card-container:hover .prod-card h2 {
-    color: white;
+    color: #ffffff;
+    /* Cambiar texto a blanco */
 }
-
 
 /* Link del producto sin subrayado */
 .prod-card-container {
     text-decoration: none;
     color: inherit;
+}
+
+/* Botón de acción (Ejemplo de agregado para llamadas de acción) */
+.prod-card button {
+    background-color: #ffeb3b;
+    /* Amarillo brillante */
+    color: #212121;
+    /* Texto oscuro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prod-card button:hover {
+    background-color: #f57c00;
+    /* Naranja más oscuro al pasar el mouse */
 }

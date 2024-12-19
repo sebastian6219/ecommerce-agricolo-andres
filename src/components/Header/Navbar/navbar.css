@@ -1,16 +1,14 @@
-/* Estilo general del navbar */
 
 header {
-
     margin-bottom: 10rem;
-
 }
 
 .custom-navbar {
     padding: 0;
     height: 5rem;
     width: 100%;
-    background-color: #F7F7FF;
+    background-color: #FFFFFF;
+    /* Blanco limpio */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -28,7 +26,6 @@ header {
     top: 0;
 }
 
-
 /* Contenedor del navbar */
 .navbar-container {
     height: 100%;
@@ -37,7 +34,6 @@ header {
     justify-content: space-between;
     width: 100%;
 }
-
 
 /* Estilo del menú colapsado */
 .navbar-menu {
@@ -53,7 +49,8 @@ header {
 
 /* Estilo para los enlaces de navegación */
 .nav-item {
-    color: rgb(246 168 48);
+    color: #1F8A70;
+    /* Verde deportivo */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,12 +63,11 @@ header {
 }
 
 .nav-item.active {
-    color: #fc847b;
-    /* Color para el enlace activo */
+    color: #FC847B;
+    /* Naranja deportivo */
     font-weight: bold;
-    /* Puedes añadir peso adicional para destacar el enlace activo */
-    border-bottom: 2px solid #FE5F55;
-    /* Añade una línea debajo del enlace activo */
+    border-bottom: 2px solid #F34213;
+    /* Naranja deportivo */
 }
 
 .nav-item:hover {
@@ -80,7 +76,6 @@ header {
 }
 
 .nav-item:hover path {
-
     color: #010101;
 }
 
@@ -99,5 +94,6 @@ header {
 
 .CartWidget {
     font-size: 1.5rem;
-    color: rgb(246 168 48);
+    color: #F34213;
+    /* Naranja deportivo */
 }

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-    gap: 0;
+    gap: 100;
 }
 
 /* Botones de sumar y restar */
@@ -12,7 +12,7 @@
     background-color: #F7F7FF;
     /* Color primario de la paleta */
     color: #2698f2;
-    border: 1px solid #577399;
+   
     padding: 8px 16px;
     border: 1px solid;
     border-radius: 4px;
