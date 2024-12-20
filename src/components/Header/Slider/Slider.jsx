@@ -45,7 +45,7 @@ const Slider = () => {
                 style={{ transform: `translateX(-${(currentIndex % totalSlides) * 100}%)` }}
                 onTransitionEnd={handleTransitionEnd}
             >
-                {slides.concat(slides[0]).map((slide, index) => ( 
+                {slides.concat(slides[0]).map((slide, index) => ( // Duplicamos el primer slide al final
                 <div className="slide" key={index}>
                     <span className='span-slider'>{slide.content}</span>
                 </div>
