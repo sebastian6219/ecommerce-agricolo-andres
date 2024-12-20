@@ -60,7 +60,7 @@ npm install
 ## Despliegue
 
 Center Bike está desplegado en Vercel. Puedes acceder a la aplicación en el siguiente enlace:
-[https://center-bike.vercel.app](https://center-bike.vercel.app)
+[https://center-bike.vercel.app](https://ecommerce-agricolo-andres.vercel.app/)
 
 ## Contribuciones
 
