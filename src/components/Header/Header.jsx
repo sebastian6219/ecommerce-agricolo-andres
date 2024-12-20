@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import Slider from './slider/Slider'
+import Slider from './Slider/Slider'
 function Header() {
   return (
     <header>
