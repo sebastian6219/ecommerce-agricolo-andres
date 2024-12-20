@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({ producto }) => {
 
-    const { id, image, brand, description, terrain, tating, price } = producto
+    const { id, image, brand, description, terrain, tating, price , title} = producto
 
     return (
 

@@ -5,7 +5,7 @@ import "./itemDetail.css";
 import ItemCount from "../../ItemCount/ItemCount";
 import { CartContext } from "../../../../../context/CartContext";
 import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
+
 
 const ItemDetail = ({ producto }) => {
   const { agregarAlCarrito } = useContext(CartContext);

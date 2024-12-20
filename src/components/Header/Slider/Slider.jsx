@@ -5,35 +5,35 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // Datos para mostrar en el slider
+  
   const slides = [
-    { content: "Este es el contenido del primer slide." },
-    { content: "Aquí está la información del segundo slide." },
-    { content: "Y este es el contenido del tercer slide." }
+    { content: "Aprovecha las 18 Cuotas sin Interes." },
+    { content: "Descuentos Increibles Pagando en Efectivo." },
+    { content: "Envios sin Cargo." }
   ];
 
   const totalSlides = slides.length;
 
-  // useEffect para cambiar de slide automáticamente cada 5 segundos
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000); // 5000 milisegundos = 5 segundos
+    }, 5000); 
 
-    return () => clearInterval(interval); // Limpiar el intervalo cuando el componente se desmonte
+    return () => clearInterval(interval); 
   }, []);
 
-  // Función para manejar el siguiente slide con transición infinita
+
   const handleNext = () => {
     setIsTransitioning(true);
     setCurrentIndex((prevIndex) => prevIndex + 1);
   };
 
-  // Cuando la transición finaliza, hacemos el carrusel "infinito"
+ 
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
     if (currentIndex >= totalSlides) {
-      setCurrentIndex(0); // Volver al inicio sin transición abrupta
+      setCurrentIndex(0); 
     }
   };
 
