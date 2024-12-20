@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Slider.css';
+import './slider.css';
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +45,7 @@ const Slider = () => {
                 style={{ transform: `translateX(-${(currentIndex % totalSlides) * 100}%)` }}
                 onTransitionEnd={handleTransitionEnd}
             >
-                {slides.concat(slides[0]).map((slide, index) => ( // Duplicamos el primer slide al final
+                {slides.concat(slides[0]).map((slide, index) => ( 
                 <div className="slide" key={index}>
                     <span className='span-slider'>{slide.content}</span>
                 </div>
